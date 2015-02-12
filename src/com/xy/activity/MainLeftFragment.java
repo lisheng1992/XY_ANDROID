@@ -3,7 +3,6 @@ package com.xy.activity;
 import com.xy.R;
 import com.xy.common.BaseFragment;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
@@ -11,7 +10,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-@SuppressLint("ValidFragment")
 public class MainLeftFragment extends BaseFragment implements OnClickListener {
 
 	private LinearLayout main_left_setting_ll, main_left_yjfk_ll,

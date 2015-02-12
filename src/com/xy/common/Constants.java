@@ -17,6 +17,22 @@ import android.os.Environment;
  * @年份 2013
  */
 public final class Constants {
+	
+	// IP,PORT,以及接口链接的调用路径配置
+	/** 与服务器端连接的协议名 */
+	public static final String PROTOCAL = "http://";
+	/** 服务器IP */
+	public static final String HOST = "";
+	/** 服务器端口号 */
+	public static final String PORT = "";
+	/** 应用上下文完整路径 */
+	public static final String CONTEXTPATH = PROTOCAL + HOST + PORT;
+
+	/** 登录页完整URL路径 */
+	public static final String URL_LOGIN = CONTEXTPATH + "";
+	/** 注册页完整URL路径 */
+	public static final String URL_REGISTER = CONTEXTPATH + "";
+	
 	/** 系统初始化配置文件名 */
 	public static final String SYSTEM_INIT_FILE_NAME = "android_pos_ini";
 	public static final String FLAG = "com.android";

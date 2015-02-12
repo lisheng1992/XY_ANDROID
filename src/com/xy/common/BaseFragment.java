@@ -11,14 +11,14 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 /**
- * Title:BaseFragment.class Description: BaseFragment Demo 优化后Fragment 
+ * Title:BaseFragment.class Description: BaseFragment Demo 优化后Fragment
  * Copyright:Copyright (c) 2014 Company:湖南裕邦
  * 
  * @author yangming.zhang
  * @version 1.0
  * @date 2014-4-25
  */
-public abstract class BaseFragment  extends Fragment {
+public abstract class BaseFragment extends Fragment {
 
 	/**
 	 * 数据保存
@@ -43,28 +43,26 @@ public abstract class BaseFragment  extends Fragment {
 	// 如果要更改fragment的dialog的相关数据，可以在其实现类里面重写onCreate()
 	// 方法，直接修改上面三个数据,然后super.onCreate()执行里面的异步数据操作
 	@Override
-	public void onCreate(Bundle savedInstanceState)
-	{
+	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		inflater = LayoutInflater.from(getActivity());
-        
-		getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+		getActivity().getWindow().setSoftInputMode(
+				WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		// 进行数据的加载操作
-		new AsyncTaskUtil(getActivity(), dialogText, isShowDialg, isCanCancel, paraData)
-		{
+		new AsyncTaskUtil(getActivity(), dialogText, isShowDialg, isCanCancel,
+				paraData) {
 
 			@Override
-			protected Object backResult(Object result)
-			{
+			protected Object backResult(Object result) {
 
 				return onEndTaskAddView(result);
 
 			}
 
 			@Override
-			protected Object backDataProcess(Object... params)
-			{
+			protected Object backDataProcess(Object... params) {
 				dataObj = onCreateTaskLoadData(params);
 				return dataObj;
 			}
@@ -72,19 +70,19 @@ public abstract class BaseFragment  extends Fragment {
 	}
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-	{
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
 		// TODO 创建和fragment关联的view hierarchy.
-		return new View(getActivity());
+//		return new View(getActivity());
+		return null;
 
 	}
 
 	@Override
-	public void onActivityCreated(Bundle savedInstanceState)
-	{
+	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
-		//onEndTaskAddView(dataObj);
+		// onEndTaskAddView(dataObj);
 
 	}
 
@@ -105,28 +103,22 @@ public abstract class BaseFragment  extends Fragment {
 	 * 
 	 * @param message
 	 */
-	public void toastInfor(final String message)
-	{
-		getActivity().runOnUiThread(new Runnable()
-		{
+	public void toastInfor(final String message) {
+		getActivity().runOnUiThread(new Runnable() {
 			@Override
-			public void run()
-			{
-				Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
+			public void run() {
+				Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT)
+						.show();
 			}
 		});
 	}
 
 	@Override
-	public void onResume()
-	{
+	public void onResume() {
 		super.onResume();
-		if (isBaseOnCreate)
-		{
+		if (isBaseOnCreate) {
 			isBaseOnCreate = false;
-		}
-		else
-		{
+		} else {
 			onBaseResume();
 		}
 	}
@@ -134,8 +126,7 @@ public abstract class BaseFragment  extends Fragment {
 	/**
 	 * onCreate进入时不调用 用于onResume()处理
 	 */
-	protected void onBaseResume()
-	{
+	protected void onBaseResume() {
 
 	}
 }

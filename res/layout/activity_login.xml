@@ -52,9 +52,11 @@
             android:textColor="@color/grey" />
 
         <EditText
+            android:id="@+id/login_username_et"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
+            android:digits="@string/login_edt_digit"
             android:maxLength="20"
             android:paddingLeft="5dp"
             android:singleLine="true"
@@ -80,10 +82,12 @@
             android:textColor="@color/grey" />
 
         <EditText
+            android:id="@+id/login_password_et"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
             android:inputType="textPassword"
+            android:digits="@string/register_edit_pwd_digit"
             android:maxLength="20"
             android:paddingLeft="5dp"
             android:singleLine="true"

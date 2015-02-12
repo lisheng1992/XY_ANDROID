@@ -2,6 +2,7 @@ package com.xy.activity;
 
 import org.apache.commons.lang.StringUtils;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -64,7 +65,7 @@ public class RegisterActivity extends BaseActivity {
 	}
 	
 	// 确认注册
-	@Click(R.id.r_submit)
+	@Click(R.id.regist_submit)
 	public void toRegist(){
 		String userName = StringUtils.trim(regist_username_edt.getText().toString());
 		String password = StringUtils.trim(regist_password_et.getText().toString());
@@ -72,7 +73,9 @@ public class RegisterActivity extends BaseActivity {
 		String email = StringUtils.trim(regist_email_et.getText().toString());
 		String age = StringUtils.trim(regist_age_et.getText().toString());
 		if (checkRegister(userName, password, affirmPassword, email, age)) {
-			
+			Intent intent = new Intent(this, LoginActivity_.class);
+			startActivity(intent);
+			this.finish();
 		}
 	}
 

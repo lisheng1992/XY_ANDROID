@@ -1,6 +1,7 @@
 package com.xy.activity;
 
 import android.content.Intent;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.googlecode.androidannotations.annotations.AfterViews;
@@ -17,6 +18,12 @@ public class LoginActivity extends BaseActivity {
 	
 	@ViewById(R.id.is_autoLogin_img)
 	ImageView isAuto_img;
+	
+	@ViewById(R.id.login_username_et)
+	EditText login_username_et;
+	
+	@ViewById(R.id.login_password_et)
+	EditText login_password_et;
 	
 	@AfterViews
 	public void init(){

@@ -1,49 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- 登录和注册 -->
+
     <string name="app_name">爱同在</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="login_text">登录</string>
-    
     <string name="login_username_hintText">Username:</string>
     <string name="login_password_hintText">Password:</string>
     <string name="login_autoLogin_Text">自动登录</string>
     <string name="login_forgetPassword_Text"><u>忘记密码？</u></string>
     <string name="login_register_Text"><u>我要注册</u></string>
     <string name="register_username_Txt">用户名：</string>
-    <string name="register_password_Txt">密     码：</string>
+    <string name="register_password_Txt">密 码：</string>
     <string name="register_affirmPassword_Txt">确认密码：</string>
-    <string name="register_email_Txt">邮      箱：</string>
+    <string name="register_email_Txt">邮 箱：</string>
     <string name="register_age_Txt">出身年月：</string>
-    <string name="register_sure_Txt">确    定</string>
+    <string name="register_sure_Txt">确 定</string>
     <string name="login_register_Txt">我要注册</string>
     <string name="login_forget_Txt">忘记密码</string>
-    <string name="forget_username_Txt">用     户    名:</string>
-    <string name="forget_newpwd_Txt">新   密   码:</string>
+    <string name="forget_username_Txt">用 户 名:</string>
+    <string name="forget_newpwd_Txt">新 密 码:</string>
     <string name="forget_newpwd_sure_Txt">新密码确认:</string>
+    <string name="login_edt_digit">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</string>
+    <string name="mailbox_edt_digit">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.@</string>
+    <string name="register_edit_pwd_digit">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_</string>
+
+    <!-- 登录和注册 -->
     <string name="main_title">首  页</string>
     <string name="main_hottopic_Txt">热点话题</string>
     <string name="main_specialinvtation_Txt">专题邀请</string>
-    
     <string name="main_health_title">健康贴士</string>
     <string name="main_health_detail">贴士详情</string>
-    
     <string name="main_health_xcbjb_txtt">性传播疾病</string>
     <string name="main_health_ywly_txtt">药物滥用</string>
     <string name="main_health_yfxyy_txtt">预防性用药</string>
     <string name="main_health_kbkywzl_txtt">抗病毒药物治疗</string>
     <string name="main_health_aqtsy_txtt">安全套使用</string>
     <string name="main_health_hivjc_txtt">HIV检测</string>
-    
     <string name="main_file_title">健康档案</string>
     <string name="main_change_title">行为改变</string>
-    
     <string name="main_change_xwjl_txt">行为记录</string>
     <string name="main_change_wxgst_txt">我想告诉TA</string>
     <string name="main_change_jcgzytx_txt">检测告知与提醒</string>
     <string name="main_change_jjxl_txt">每天一点积极心理</string>
-    
     <string name="main_change_readinfo_txt">亲，根据您的健康评估资料，我们建议您能够对现存的一些危险行为进行改变，以降低对健康的危害！以下为相应的计划。</string>
     <string name="main_change_read_txt">查      看</string>
     <string name="main_change_plan_txt">改变计划</string>
@@ -76,16 +77,12 @@
 用药依从性\n
 要坚持按时按量服药，不漏服、不擅自停药、定期前往专业机构取药。\n\n
 详细建议：\n
-启动抗病毒治疗后，药物使用能够有效抑制病毒的复制与全身蔓延，并降低HIV向他人的传播。停药后，这些作用将会迅速降低。所以，一定要坚持按时按量服药。
-
-    </string>
-
+启动抗病毒治疗后，药物使用能够有效抑制病毒的复制与全身蔓延，并降低HIV向他人的传播。停药后，这些作用将会迅速降低。所以，一定要坚持按时按量服药。</string>
     <string name="main_bbs_title">论  坛</string>
     <string name="main_bbs_ztlt_tx">专题论坛</string>
     <string name="main_bbs_tlz_tx">讨论组</string>
     <string name="main_bbs_qgtd_tx">情感天地</string>
     <string name="main_bbs_tbjy_tx">同伴教育</string>
-    
     <string name="main_jf_text">目前积分:</string>
     <string name="main_jff_text">分</string>
     <string name="main_jfsjz_text">我的积分时间轴</string>
