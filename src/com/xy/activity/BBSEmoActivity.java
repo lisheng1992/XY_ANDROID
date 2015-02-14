@@ -17,6 +17,7 @@ public class BBSEmoActivity extends BaseActivity {
 	
 	@AfterViews
 	public void init(){
+		
 		textView1.setText(R.string.main_bbs_qgtd_tx);
 	}
 	
